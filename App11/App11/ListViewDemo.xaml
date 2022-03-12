@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App11.ListViewDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<ListView >
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String >Hugo</x:String>
+                        <x:String >Anabel</x:String>
+                        <x:String >Alex</x:String>
+                        <x:String >Omar</x:String>
+                        <x:String >Daryl</x:String>
+                        <x:String >Erick</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>-->
+            <ListView x:Name="lvtExample"></ListView>
+            <ListView x:Name="lvTexCell">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding LastName}"
+                                  Detail="{Binding FirstName}"
+                                  />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="lvViewCell">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                              <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                                    <Label Text="{Binding FirstName}"/>
+                                    <Label Text="{Binding LastName}"/>
+                              </StackLayout>
+                                <Label Text="{Binding City}" TextColor="Green" HorizontalOptions="CenterAndExpand"/>
+                                
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

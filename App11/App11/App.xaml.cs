@@ -12,9 +12,10 @@ namespace App11
 
             //MainPage = new MainPage();
             //MainPage = new Page1();
-            MainPage = new NavigationPage(new Page1());
+            //MainPage = new NavigationPage(new Page1());
             //MainPage = new TabbedPage1();
             //MainPage = new CarouselPage1();
+            MainPage = new ListViewDemo();
         }
 
         protected override void OnStart()
