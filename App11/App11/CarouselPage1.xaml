@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App11.CarouselPage1">
+    
+    
+    <ContentPage Title="Tab 1" >
+        <StackLayout>
+            <Label Text="Tapp 1" FontSize="Large" BackgroundColor="Red" />
+        </StackLayout>
+
+    </ContentPage>
+    <ContentPage Title="Tab 2"  >
+        <StackLayout>
+            <Label Text="Tapp 2" FontSize="Large" BackgroundColor="Yellow" />
+        </StackLayout>
+
+    </ContentPage>
+    <ContentPage Title="Tab 3"  >
+
+        <StackLayout>
+            <Label Text="Tapp 2" FontSize="Large" BackgroundColor="Green" />
+        </StackLayout>
+
+
+    </ContentPage>
+</CarouselPage>
